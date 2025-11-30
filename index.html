@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unum - Your Pocket Agronomist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .glass-dark {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased overflow-x-hidden">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 top-4 px-4">
+    <div
+      class="max-w-7xl mx-auto glass-dark rounded-full px-6 py-3 flex items-center justify-between border-t-2 border-white/20">
+      <!-- Logo -->
+      <div class="bg-green-500 text-white font-bold px-6 py-2 rounded-full">
+        Logo here
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-white/90 hover:text-green-400 transition-colors">Hero</a>
+        <a href="#problems" class="text-white/90 hover:text-green-400 transition-colors">Problems</a>
+        <a href="#solutions" class="text-white/90 hover:text-green-400 transition-colors">Solutions</a>
+        <a href="#how-it-works" class="text-white/90 hover:text-green-400 transition-colors">How it works</a>
+        <span class="text-white/50">|</span>
+        <a href="#team" class="text-white/90 hover:text-green-400 transition-colors">Our Team</a>
+      </div>
+
+      <!-- CTA Button -->
+      <button
+        class="hidden md:block bg-green-500/90 hover:bg-green-500 text-white px-6 py-2 rounded-full transition-all hover:-translate-y-0.5 shadow-lg border border-white/20">
+        Get app
+      </button>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-white text-xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header
+    class="relative min-h-screen flex flex-col items-center justify-center bg-[url('images/hero_bg.jpg')] bg-cover bg-center pt-32 pb-20 px-4">
+    <!-- Hero Content -->
+    <div class="container mx-auto flex flex-col items-center text-center z-10 fade-in-scroll">
+      <h1
+        class="text-4xl md:text-6xl lg:text-[64px] font-bold text-white leading-tight glass rounded-3xl p-6 md:p-8 max-w-4xl border-t-2 border-white/30">
+        Unum — Your pocket agronomist <br class="hidden md:block">
+        powered by Soil Intelligence
+      </h1>
+      <p class="mt-8 text-lg md:text-xl text-white/90 glass rounded-2xl p-4 max-w-2xl border border-white/30">
+        AI, satellites and soil science that tell you <br class="hidden md:block">
+        what to plant, when to water and how to protect your yield.
+      </p>
+      <button
+        class="mt-8 px-8 py-4 rounded-full bg-black/30 glass text-white font-medium hover:bg-green-500 hover:text-white transition-all duration-300 border-2 border-white/20 hover:shadow-lg hover:-translate-y-1">
+        Download the app
+      </button>
+    </div>
+
+    <!-- Stats/Charts -->
+    <div
+      class="container mx-auto mt-20 flex flex-col lg:flex-row items-center justify-center gap-8 px-4 fade-in-scroll">
+      <div class="w-full max-w-md glass rounded-3xl p-8 flex flex-col items-center justify-center min-h-[300px]">
+        <img src="images/chart_1.png" alt="Chart 1" class="max-w-full h-auto object-contain">
+      </div>
+      <div
+        class="w-full max-w-2xl glass rounded-3xl p-8 flex flex-col items-center justify-center min-h-[300px] bg-[url('images/cahrt_2.svg')] bg-no-repeat bg-center bg-contain">
+        <!-- Background image handles the content here as per original -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Business at Risk Section -->
+  <section class="relative py-20 bg-[url('images/soil_bg.png')] bg-cover bg-center text-white">
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-16">
+      <!-- Left Text -->
+      <div class="lg:w-1/2 fade-in-scroll">
+        <h2 class="text-5xl md:text-[68px] font-bold leading-tight mb-12">
+          Business at risk. <br>It is time to act.
+        </h2>
+        <div class="flex flex-col sm:flex-row gap-12">
+          <div class="flex flex-col items-start gap-4">
+            <div class="w-24 h-24 rounded-full border-4 border-white/20 flex items-center justify-center glass">
+              <img src="images/corn.png" class="w-8 h-auto" alt="Corn">
+            </div>
+            <div>
+              <h3 class="text-5xl font-bold">+50%</h3>
+              <p class="text-lg opacity-90 mt-2">of global Growth Domestic <br>Product depends on soil health</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-4">
+            <div class="w-24 h-24 rounded-full border-4 border-white/20 flex items-center justify-center glass">
+              <img src="images/corn2.png" class="w-10 h-auto" alt="Corn">
+            </div>
+            <div>
+              <h3 class="text-5xl font-bold">+60%</h3>
+              <p class="text-lg opacity-90 mt-2">of cultivated soils are degraded <br>or very degrated</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Images -->
+      <div class="lg:w-1/2 flex flex-col items-end gap-6 fade-in-scroll">
+        <div class="glass rounded-2xl p-6 w-full max-w-md flex items-center justify-center">
+          <img src="images/img_1.png" alt="Risk 1" class="max-w-full h-auto">
+        </div>
+        <div class="glass rounded-2xl p-6 w-full max-w-md flex items-center justify-center">
+          <img src="images/img_2.png" alt="Risk 2" class="max-w-full h-auto">
+        </div>
+        <div class="glass rounded-2xl p-6 w-full max-w-md flex items-center justify-center">
+          <img src="images/image_3.svg" alt="Risk 3" class="max-w-full h-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems Section -->
+  <section id="problems" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 fade-in-scroll">
+        <h2 class="text-xl text-red-600 font-bold uppercase tracking-wide">Problems</h2>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-16">
+        <!-- Sticky Left Content -->
+        <div class="lg:w-1/3 lg:sticky lg:top-32 self-start fade-in-scroll">
+          <h3 class="text-4xl font-bold text-slate-900 mb-6">
+            Agriculture remains one of the<br>least digitized industries.
+          </h3>
+          <p class="text-xl text-slate-600 mb-8">
+            Even experienced farmers still rely on intuition—not actionable data.<br>
+            Farmers in Uzbekistan (and similar markets) struggle with
+          </p>
+          <button
+            class="w-full bg-green-700 text-white text-lg rounded-full py-4 px-6 flex items-center justify-between hover:bg-green-800 transition-colors shadow-lg">
+            <span>Farmers in Uzbekistan strugle with</span>
+            <img src="images/Icon.png" alt="Arrow" class="w-6 h-6">
+          </button>
+        </div>
+
+        <!-- Right Grid Content -->
+        <div class="lg:w-2/3 grid md:grid-cols-2 gap-8 fade-in-scroll">
+          <!-- Item 1 -->
+          <div class="flex flex-col gap-4">
+            <div class="aspect-square bg-[url('images/prob1.png')] bg-cover rounded-2xl shadow-sm"></div>
+            <div>
+              <h4 class="text-2xl font-bold mb-2">Unpredictable harvests</h4>
+              <p class="text-lg text-slate-600">One year onion is profitable → next year oversupply kills prices.</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="flex flex-col gap-4">
+            <div class="aspect-square bg-[url('images/img_2.jpg')] bg-cover rounded-2xl shadow-sm"></div>
+            <div>
+              <h4 class="text-2xl font-bold mb-2">No structured decision-making</h4>
+              <p class="text-lg text-slate-600">Farmers rely on intuition, not data.</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="flex flex-col gap-4">
+            <div class="aspect-square bg-[url('images/prob4.png')] bg-cover rounded-2xl shadow-sm"></div>
+            <div>
+              <h4 class="text-2xl font-bold mb-2">No easy access to soil knowledge</h4>
+              <p class="text-lg text-slate-600">Most farmers don’t know pH/NPK balance of their land.</p>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="flex flex-col gap-4">
+            <div class="aspect-square bg-[url('images/prob3.png')] bg-cover rounded-2xl shadow-sm"></div>
+            <div>
+              <h4 class="text-2xl font-bold mb-2">Weather unpredictability</h4>
+              <p class="text-lg text-slate-600">Rain shifts, frost episodes, heat waves destroy yield.</p>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="flex flex-col gap-4">
+            <div class="aspect-square bg-[url('images/prob5.png')] bg-cover rounded-2xl shadow-sm"></div>
+            <div>
+              <h4 class="text-2xl font-bold mb-2">No digital pest diagnosis</h4>
+              <p class="text-lg text-slate-600">Agronomists are expensive or unavailable, vision-based tools don’t exist
+                locally</p>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="flex flex-col gap-4">
+            <div class="aspect-square bg-[url('images/prob6.png')] bg-cover rounded-2xl shadow-sm"></div>
+            <div>
+              <h4 class="text-2xl font-bold mb-2">Market volatility</h4>
+              <p class="text-lg text-slate-600">Prices crash without warning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quote -->
+      <div class="mt-32 max-w-5xl mx-auto text-center fade-in-scroll">
+        <h3 class="text-3xl md:text-4xl font-medium leading-relaxed">
+          “Unum gave us insights into our soil that we couldn't get anywhere else. For any farmer looking to optimize
+          their yield and protect their land, this is the future.”
+        </h3>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="mt-20 grid md:grid-cols-3 gap-8 fade-in-scroll">
+        <div
+          class="bg-gradient-to-br from-emerald-200 to-blue-200 rounded-3xl p-8 shadow-xl shadow-blue-900/10 h-full flex flex-col">
+          <div class="flex items-baseline text-5xl font-bold mb-6">18<span class="text-2xl ml-1">%</span></div>
+          <p class="text-lg font-medium">average increase in yield when early-stage crop stress is detected and
+            corrected</p>
+        </div>
+        <div
+          class="bg-gradient-to-br from-emerald-100 to-blue-100 rounded-3xl p-8 shadow-xl shadow-blue-900/10 h-full flex flex-col">
+          <div class="flex items-baseline text-5xl font-bold mb-6">27<span class="text-2xl ml-1">%</span></div>
+          <p class="text-lg font-medium">reduction in fertilizer waste when nutrients are applied based on soil-specific
+            recommendations</p>
+        </div>
+        <div
+          class="bg-gradient-to-br from-emerald-200 to-blue-300 rounded-3xl p-8 shadow-xl shadow-blue-900/10 h-full flex flex-col">
+          <div class="flex items-baseline text-5xl font-bold mb-6">31<span class="text-2xl ml-1">%</span></div>
+          <p class="text-lg font-medium">faster identification of pest outbreaks using AI-powered image analysis
+            compared to manual scouting</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section 1 (AI) -->
+  <section id="solutions" class="py-20 bg-slate-50">
+    <div class="container mx-auto px-4 fade-in-scroll">
+      <div class="text-center mb-16">
+        <h2 class="text-green-800 font-bold uppercase tracking-wide mb-2">SOLUTIONS</h2>
+        <h3 class="text-4xl md:text-5xl font-bold text-slate-900">AI & Analytics & Soil Intelligence</h3>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Card 1: AI & Analytics -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
+          <!-- Visual Placeholder -->
+          <div class="h-80 bg-slate-900 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800"></div>
+            <!-- Animated Graph Effect -->
+            <div
+              class="absolute bottom-0 left-0 right-0 h-full flex items-end justify-center gap-4 pb-12 px-12 opacity-80">
+              <div class="w-8 bg-blue-500 rounded-t-lg h-[40%] group-hover:h-[60%] transition-all duration-700"></div>
+              <div
+                class="w-8 bg-blue-400 rounded-t-lg h-[60%] group-hover:h-[80%] transition-all duration-700 delay-100">
+              </div>
+              <div
+                class="w-8 bg-cyan-400 rounded-t-lg h-[50%] group-hover:h-[70%] transition-all duration-700 delay-200">
+              </div>
+              <div
+                class="w-8 bg-teal-400 rounded-t-lg h-[75%] group-hover:h-[90%] transition-all duration-700 delay-300">
+              </div>
+            </div>
+            <div
+              class="absolute top-4 right-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-2 text-white font-bold">
+              AI</div>
+          </div>
+          <!-- Content -->
+          <div class="p-8 flex-1 flex flex-col">
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">AI & Analytics</h3>
+            <p class="text-slate-600 mb-6">Turn uncertainty into strategy. Our models analyze historical patterns to
+              predict your harvest yield and market timing.</p>
+            <ul class="space-y-3 mt-auto">
+              <li class="flex items-center gap-3 text-slate-700"><span
+                  class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-sm">✔</span>
+                Precision Yield Forecasting</li>
+              <li class="flex items-center gap-3 text-slate-700"><span
+                  class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-sm">✔</span>
+                Smart Crop Rotation Suggestions</li>
+              <li class="flex items-center gap-3 text-slate-700"><span
+                  class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-sm">✔</span>
+                Market Volatility Alerts</li>
+              <li class="flex items-center gap-3 text-slate-700"><span
+                  class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-sm">✔</span>
+                Weekly ROI & Financial Reports</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2: Soil Intelligence -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
+          <!-- Visual Placeholder -->
+          <div class="h-80 bg-slate-900 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800"></div>
+            <!-- Soil Layers Effect -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+              <div
+                class="w-48 py-2 bg-emerald-500/80 rounded-lg text-white text-center font-bold backdrop-blur-sm border border-emerald-400/50 group-hover:-translate-y-2 transition-transform duration-500">
+                Nitrogen (N)</div>
+              <div
+                class="w-48 py-2 bg-amber-600/80 rounded-lg text-white text-center font-bold backdrop-blur-sm border border-amber-400/50 group-hover:-translate-y-1 transition-transform duration-500">
+                Phosphorus (P)</div>
+              <div
+                class="w-48 py-2 bg-blue-600/80 rounded-lg text-white text-center font-bold backdrop-blur-sm border border-blue-400/50 transition-transform duration-500">
+                Moisture Lvl</div>
+            </div>
+            <div
+              class="absolute top-4 right-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-2 text-white font-bold">
+              Si</div>
+          </div>
+          <!-- Content -->
+          <div class="p-8 flex-1 flex flex-col">
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">Soil Intelligence</h3>
+            <p class="text-slate-600 mb-6">See the invisible. We combine satellite imagery with on-site data to provide
+              a complete chemical breakdown of your land.</p>
+            <ul class="space-y-3 mt-auto">
+              <li class="flex items-center gap-3 text-slate-700"><span
+                  class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-sm">✔</span>
+                NPK Nutrient Balancing</li>
+              <li class="flex items-center gap-3 text-slate-700"><span
+                  class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-sm">✔</span>
+                Smart Irrigation Scheduling</li>
+              <li class="flex items-center gap-3 text-slate-700"><span
+                  class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-sm">✔</span>
+                Instant AI Pest Diagnosis</li>
+              <li class="flex items-center gap-3 text-slate-700"><span
+                  class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-sm">✔</span>
+                QR-Based Lab Results</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section 2 (Weather) -->
+  <section class="py-20 bg-[#F6F5FA]">
+    <div class="container mx-auto px-4 fade-in-scroll">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h3 class="text-[#B49246] font-semibold tracking-widest text-xs uppercase mb-4">Solutions</h3>
+        <h2 class="text-4xl md:text-5xl font-medium text-slate-900 mb-6">Weather & Environment</h2>
+        <p class="text-slate-500 text-lg leading-relaxed">
+          Unum’s AI models combine satellite data, localized sensors, and climate records to deliver precise weather
+          intelligence for every field. Plan planting windows, adjust irrigation, and protect crops from unexpected
+          conditions.
+        </p>
+      </div>
+
+      <!-- Hero Card -->
+      <div
+        class="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-sm flex flex-col lg:flex-row items-center gap-12 overflow-hidden relative mb-16">
+        <div class="lg:w-1/2 z-10">
+          <h2 class="text-3xl md:text-4xl font-medium leading-tight text-slate-900 mb-8">
+            Learn how Unum's weather insights can help you plan for any condition.
+          </h2>
+          <a href="#" class="inline-block text-[#4ADE80] hover:text-[#22c55e] transition-colors text-lg font-medium">
+            Discover how Unum's real-time weather data and forecasting tools can help you optimize planting, irrigation,
+            and harvesting schedules.
+          </a>
+        </div>
+        <div
+          class="lg:w-1/2 relative h-[400px] w-full bg-[url('images/phone_true.png')] bg-no-repeat bg-contain bg-center lg:bg-right-bottom">
+        </div>
+      </div>
+
+      <!-- Features Grid -->
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 text-slate-800">
+            <i class="fas fa-thermometer-half text-2xl"></i>
+            <h3 class="font-semibold text-lg">Monitor soil temperature</h3>
+          </div>
+          <p class="text-slate-500 pl-9">Analyze long-term trends</p>
+        </div>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 text-slate-800">
+            <i class="fas fa-tint text-2xl"></i>
+            <h3 class="font-semibold text-lg">Improved yield quality</h3>
+          </div>
+          <p class="text-slate-500 pl-9">Reduced water usage</p>
+        </div>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 text-slate-800">
+            <i class="fas fa-chart-line text-2xl"></i>
+            <h3 class="font-semibold text-lg">Data-driven insights</h3>
+          </div>
+          <p class="text-slate-500 pl-9">Better resource allocation</p>
+        </div>
+      </div>
+
+      <!-- Bottom Cards -->
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-1 h-[400px] rounded-[2.5rem] overflow-hidden relative group">
+          <img src="images/4.png" alt="Scanning leaf"
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-black/10"></div>
+        </div>
+        <div
+          class="lg:col-span-2 bg-white rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden flex flex-col justify-between min-h-[400px]">
+          <h2 class="text-2xl font-medium text-slate-900 leading-snug max-w-lg z-10">
+            Unum helps farmers make data-driven decisions that improve yields and reduce environmental impact.
+          </h2>
+          <div class="relative h-64 mt-8">
+            <img src="images/corn_true.png" alt="Corn"
+              class="absolute bottom-0 right-0 h-full object-contain opacity-90">
+            <!-- Floating Stats -->
+            <div
+              class="absolute top-4 left-0 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100 w-64">
+              <h4 class="font-semibold text-slate-800 text-sm mb-2">Conventional agriculture</h4>
+              <div class="flex justify-between items-end">
+                <span class="text-xl font-medium text-slate-900">17<span class="text-xs text-slate-500">%</span></span>
+                <span class="text-base font-medium text-slate-900">63<span
+                    class="text-xs text-slate-500">%</span></span>
+              </div>
+            </div>
+            <div
+              class="absolute bottom-4 right-1/3 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100 w-64 z-20">
+              <h4 class="font-semibold text-slate-800 text-sm mb-2">Regenerative agriculture</h4>
+              <div class="flex justify-between items-end">
+                <span class="text-3xl font-medium text-slate-900">80<span class="text-sm text-slate-500">%</span></span>
+                <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-bold">+45% Yield</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section 3 (Field Management) -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 text-center fade-in-scroll">
+      <h2 class="text-orange-700 font-bold uppercase tracking-wide mb-2">SOLUTIONS</h2>
+      <h3 class="text-4xl md:text-[48px] font-bold text-slate-900 mb-6">Field Management</h3>
+      <p class="text-lg text-slate-600 max-w-4xl mx-auto mb-16">
+        Unum simplifies farm operations by turning every field into a data-rich, manageable unit. From zoning and crop
+        health monitoring to task scheduling and resource tracking, Field Management gives farmers a clear, intelligent
+        overview of their land — all in one place.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="aspect-[451/504] bg-white shadow-lg rounded-3xl bg-[url('images/8.png')] bg-cover bg-center hover:-translate-y-2 transition-transform duration-300">
+        </div>
+        <div
+          class="aspect-[451/504] bg-white shadow-lg rounded-3xl bg-[url('images/10.png')] bg-cover bg-center hover:-translate-y-2 transition-transform duration-300">
+        </div>
+        <div
+          class="aspect-[451/504] bg-white shadow-lg rounded-3xl bg-[url('images/9.png')] bg-cover bg-center hover:-translate-y-2 transition-transform duration-300">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-20 bg-slate-50">
+    <div class="container mx-auto px-4 fade-in-scroll">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl md:text-[60px] font-bold text-slate-900 mb-6">TEAM</h2>
+        <p class="text-lg text-slate-600 max-w-4xl mx-auto">
+          A multidisciplinary team of engineers, designers, and agricultural specialists building practical AI for real
+          farming challenges. We combine machine learning, product thinking, and domain expertise to deliver tools
+          farmers can truly rely on.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-8 max-w-6xl mx-auto">
+        <!-- Team Member 1 -->
+        <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+          <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
+              <img src="images/xoji.png" alt="Xojiakbar Tulqunov" class="w-full h-full object-cover">
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Xojiakbar Tulqunov</h3>
+              <div class="flex gap-4 text-2xl text-slate-600">
+                <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row gap-8 h-full relative z-10">
+              <div class="flex-1">
+                <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">CEO • Data Scientist • Agricultural
+                  Advisor</h4>
+                <p class="text-gray-700 font-medium mb-4">Combines AI expertise with field-level agricultural knowledge
+                  to design high-impact, farmer-centric solutions.</p>
+                <p class="text-gray-700 font-medium mb-8">Has won the 1st place in Tech for Ecology Hackathon organized
+                  by UNICEF and School21.</p>
+
+                <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Computer
+                    Vision</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">ML</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Geospatial</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">OpenCV</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">TensorFlow</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <img src="images/tensor.png" alt="TensorFlow" class="w-48 h-48 object-contain opacity-80">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 2 (Mirrored Layout on Desktop) -->
+        <div class="flex flex-col lg:flex-row-reverse gap-6 items-stretch">
+          <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
+              <img src="images/kamron.JPG" alt="Mirzayev Kamronbek" class="w-full h-full object-cover">
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Mirzayev Kamronbek</h3>
+              <div class="flex gap-4 text-2xl text-slate-600">
+                <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row-reverse gap-8 h-full relative z-10">
+              <div class="flex-1">
+                <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Frontend & Mobile Developer, QA</h4>
+                <p class="text-gray-700 font-medium mb-8">Combines AI expertise with field-level agricultural knowledge
+                  to design high-impact, farmer-centric solutions.</p>
+
+                <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">UI
+                    engineering</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">QA
+                    automation</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">TailwindCSS</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Mobile dev</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <img src="images/tail.png" alt="Tailwind" class="w-48 h-48 object-contain opacity-80">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+          <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
+              <img src="images/javo.png" alt="Javohir Joraqulov" class="w-full h-full object-cover">
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Javohir Joraqulov</h3>
+              <div class="flex gap-4 text-2xl text-slate-600">
+                <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-figma"></i></a>
+                <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row gap-8 h-full relative z-10">
+              <div class="flex-1">
+                <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">UI UX Designer, Marketing & Growth, PM
+                </h4>
+                <p class="text-gray-700 font-medium mb-8">19-year-old passionate about UI/UX design and frontend
+                  development. An IT-in-Business student who brings structure, clarity, and initiative to every team
+                  project.</p>
+
+                <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">UI/UX</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Branding</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Figma</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Notion</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <img src="images/Figma-logo.png" alt="Figma" class="w-48 h-48 object-contain opacity-80">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 4 (Mirrored) -->
+        <div class="flex flex-col lg:flex-row-reverse gap-6 items-stretch">
+          <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
+              <img src="images/ibrohim.JPG" alt="Ibrohim Murodjonov" class="w-full h-full object-cover">
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Ibrohim Murodjonov</h3>
+              <div class="flex gap-4 text-2xl text-slate-600">
+                <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-python"></i></a>
+                <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row-reverse gap-8 h-full relative z-10">
+              <div class="flex-1">
+                <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">CTO, Backend Developer</h4>
+                <p class="text-gray-700 font-medium mb-8">19-year-old passionate about UI/UX design and frontend
+                  development. An IT-in-Business student who brings structure, clarity, and initiative to every team
+                  project.</p>
+
+                <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Scalable
+                    APIs</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Cloud
+                    Architecture</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Security</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Docker</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">PostgreSQL</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <img src="images/python.png" alt="Python" class="w-48 h-48 object-contain opacity-80">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 5 -->
+        <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+          <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
+              <img src="images/anvar.JPG" alt="Anvar Zubaydullayev" class="w-full h-full object-cover">
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Anvar Zubaydullayev</h3>
+              <div class="flex gap-4 text-2xl text-slate-600">
+                <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row gap-8 h-full relative z-10">
+              <div class="flex-1">
+                <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Database Engineer, Product Manager</h4>
+                <p class="text-gray-700 font-medium mb-4">Combines AI expertise with field-level agricultural knowledge
+                  to design high-impact, farmer-centric solutions.</p>
+                <p class="text-gray-700 font-medium mb-8">Has won the 1st place in Tech for Ecology Hackathon organized
+                  by UNICEF and School21.</p>
+
+                <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Product
+                    strategy</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Data
+                    modeling</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">PostgreSQL</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Airflow</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <img src="images/post.png" alt="Postgres" class="w-48 h-48 object-contain opacity-80">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="py-20 bg-white">
+    <div class="container mx-auto px-4 fade-in-scroll">
+      <div class="text-center mb-20">
+        <h2 class="text-5xl md:text-[60px] font-bold text-slate-900">Roadmap</h2>
+        <p class="text-lg text-slate-600 mt-4">Our journey to revolutionizing agriculture.</p>
+      </div>
+
+      <!-- Responsive Timeline -->
+      <div class="relative max-w-6xl mx-auto">
+        <!-- Connecting Line (Desktop: Horizontal, Mobile: Vertical) -->
+        <div
+          class="absolute left-8 top-0 bottom-0 w-1 bg-green-200 md:left-0 md:right-0 md:top-1/2 md:h-1 md:w-full md:bottom-auto -z-10">
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-4">
+          <!-- Step 1: Idea -->
+          <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
+            <!-- Circle -->
+            <div
+              class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
+              1</div>
+            <!-- Content -->
+            <div
+              class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-slate-900 mb-2">IDEA</h3>
+              <ul class="text-slate-600 text-sm space-y-1">
+                <li>Market research</li>
+                <li>Core features defined</li>
+                <li>Problem validation with farmers</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 2: Prototype -->
+          <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
+            <!-- Circle -->
+            <div
+              class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
+              2</div>
+            <!-- Content -->
+            <div
+              class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-slate-900 mb-2">PROTOTYPE</h3>
+              <ul class="text-slate-600 text-sm space-y-1">
+                <li>Simple UI</li>
+                <li>Mock pest detection</li>
+                <li>Fake yield results</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 3: MVP -->
+          <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
+            <!-- Circle -->
+            <div
+              class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
+              3</div>
+            <!-- Content -->
+            <div
+              class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-slate-900 mb-2">MVP</h3>
+              <ul class="text-slate-600 text-sm space-y-1">
+                <li>Real pest detection model</li>
+                <li>Task notifications</li>
+                <li>Soil analysis (manual input)</li>
+                <li>Beta with small farmers</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 4: Launch -->
+          <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
+            <!-- Circle -->
+            <div
+              class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
+              4</div>
+            <!-- Content -->
+            <div
+              class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-slate-900 mb-2">LAUNCH</h3>
+              <ul class="text-slate-600 text-sm space-y-1">
+                <li>Premium features</li>
+                <li>Scalable backend</li>
+                <li>Subscription system</li>
+                <li>Partnerships</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Simple Mobile Menu Toggle (Optional, can add if needed)
+    // Fade in animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+          }
+        });
+      });
+
+      document.querySelectorAll('.fade-in-scroll').forEach((el) => {
+        el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+
+</html>
