@@ -752,413 +752,459 @@
               class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
             <div class="absolute inset-0 bg-black/10"></div>
           </div>
-          <div
-            class="lg:col-span-2 bg-white rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden flex flex-col justify-between min-h-[400px]">
-            <h2 class="text-2xl font-medium text-slate-900 leading-snug max-w-lg z-10">
-              Unum helps farmers make data-driven decisions that improve yields and reduce environmental impact.
-            </h2>
-            <div class="relative h-64 mt-8">
-              <img src="images/corn_true.png" alt="Corn"
-                class="absolute bottom-0 right-0 h-full object-contain opacity-90">
-              <!-- Floating Stats -->
+          <!-- Right Card (Content + Graphics) -->
+          <div class="lg:col-span-2 bg-white rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden flex flex-col">
+            <div class="z-10 max-w-lg mb-8">
+              <h2 class="text-2xl font-medium text-slate-900 leading-snug">
+                Unum helps farmers make data-driven decisions that improve yields and reduce environmental
+                impact.
+              </h2>
+            </div>
+
+            <!-- Corn Image Background/Placement -->
+            <div class="flex-1 relative min-h-[250px]">
+              <!-- Corn Image Placeholder -->
+              <img src="images/corn1.png" alt="Corn"
+                class="absolute right-[150px] bottom-[-250px] w-3/4 h-auto object-cover rounded-tl-[100px] opacity-90">
+
+              <!-- Floating Data Cards -->
+
+              <!-- Card 1: Conventional -->
               <div
-                class="absolute top-4 left-0 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100 w-64">
-                <h4 class="font-semibold text-slate-800 text-sm mb-2">Conventional agriculture</h4>
+                class="absolute left-0 top-16 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100 w-64 transform -rotate-0">
+                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Conventional agriculture</h4>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-slate-500">Healthy soils</span>
+                  <span class="text-slate-500">Adoption rate</span>
+                </div>
                 <div class="flex justify-between items-end">
                   <span class="text-xl font-medium text-slate-900">17<span
                       class="text-xs text-slate-500">%</span></span>
-                  <span class="text-base font-medium text-slate-900">63<span
-                      class="text-xs text-slate-500">%</span></span>
+                  <div class="flex items-center gap-1">
+                    <div
+                      class="w-3 h-3 rounded-full border border-slate-300 border-t-slate-800 border-r-slate-800 transform rotate-45">
+                    </div>
+                    <span class="text-base font-medium text-slate-900">85<span
+                        class="text-xs text-slate-500">%</span></span>
+                  </div>
                 </div>
               </div>
+
+              <!-- Card 2: Organic -->
               <div
-                class="absolute bottom-4 right-1/3 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100 w-64 z-20">
-                <h4 class="font-semibold text-slate-800 text-sm mb-2">Regenerative agriculture</h4>
-                <div class="flex justify-between items-end">
-                  <span class="text-3xl font-medium text-slate-900">80<span
-                      class="text-sm text-slate-500">%</span></span>
-                  <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-bold">+45% Yield</span>
+                class="absolute right-10 top-12 bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-xl border border-slate-100 w-72 z-20 transform -rotate-0">
+                <h4 class="font-semibold text-slate-800 mb-3">Regenerative agriculture</h4>
+                <div class="flex justify-between text-xs mb-2">
+                  <span class="text-slate-500">Healthy soils</span>
+                  <span class="text-slate-500">Adoption rate</span>
+                  <span class="text-slate-500">Potential gain</span>
+                </div>
+                <div class="flex items-center gap-12">
+                  <div class="flex items-center gap-1">
+                    <span class="text-base font-medium text-slate-900">80<span
+                        class="text-xs text-slate-500">%</span></span>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <span class="text-base font-medium text-slate-900">15<span
+                        class="text-xs text-slate-500">%</span></span>
+                  </div>
+                  <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-bold">+45% yield</span>
                 </div>
               </div>
             </div>
+
+            <!-- Card 3: Tip -->
+            <div
+              class="absolute right-24 bottom-1 bg-white/90 backdrop-blur-md p-3 rounded-xl shadow-lg border border-slate-100 flex items-center gap-3 max-w-xs z-20">
+              <div class="w-8 h-8 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                  </path>
+                </svg>
+              </div>
+              <div class="text-xs leading-tight">
+                <p class="text-blue-600 font-medium mb-0.5">Most impactful practice: Relying on real data</p>
+                <p class="text-slate-400"><span class="line-through decoration-slate-400">Intuition</span>
+                  <span class="text-blue-500 font-medium">→ Data</span>
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-    </section>
+  </div>
+  </section>
 
-    <!-- Solutions Section 3 (Field Management) -->
-    <section class="py-20 bg-white">
-      <div class="container mx-auto px-4 text-center fade-in-scroll">
-        <h2 class="text-orange-700 font-bold uppercase tracking-wide mb-2">SOLUTIONS</h2>
-        <h3 class="text-4xl md:text-[48px] font-bold text-slate-900 mb-6">Field Management</h3>
-        <p class="text-lg text-slate-600 max-w-4xl mx-auto mb-16">
-          Unum simplifies farm operations by turning every field into a data-rich, manageable unit. From zoning and crop
-          health monitoring to task scheduling and resource tracking, Field Management gives farmers a clear,
-          intelligent
-          overview of their land — all in one place.
+  <!-- Solutions Section 3 (Field Management) -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 text-center fade-in-scroll">
+      <h2 class="text-orange-700 font-bold uppercase tracking-wide mb-2">SOLUTIONS</h2>
+      <h3 class="text-4xl md:text-[48px] font-bold text-slate-900 mb-6">Field Management</h3>
+      <p class="text-lg text-slate-600 max-w-4xl mx-auto mb-16">
+        Unum simplifies farm operations by turning every field into a data-rich, manageable unit. From zoning and crop
+        health monitoring to task scheduling and resource tracking, Field Management gives farmers a clear,
+        intelligent
+        overview of their land — all in one place.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="aspect-[451/504] bg-white shadow-lg rounded-3xl bg-[url('images/8.png')] bg-cover bg-center hover:-translate-y-2 transition-transform duration-300">
+        </div>
+        <div
+          class="aspect-[451/504] bg-white shadow-lg rounded-3xl bg-[url('images/10.png')] bg-cover bg-center hover:-translate-y-2 transition-transform duration-300">
+        </div>
+        <div
+          class="aspect-[451/504] bg-white shadow-lg rounded-3xl bg-[url('images/9.png')] bg-cover bg-center hover:-translate-y-2 transition-transform duration-300">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-20 bg-slate-50">
+    <div class="container mx-auto px-4 fade-in-scroll">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl md:text-[60px] font-bold text-slate-900 mb-6">TEAM</h2>
+        <p class="text-lg text-slate-600 max-w-4xl mx-auto">
+          A multidisciplinary team of engineers, designers, and agricultural specialists building practical AI for
+          real
+          farming challenges. We combine machine learning, product thinking, and domain expertise to deliver tools
+          farmers can truly rely on.
         </p>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <div
-            class="aspect-[451/504] bg-white shadow-lg rounded-3xl bg-[url('images/8.png')] bg-cover bg-center hover:-translate-y-2 transition-transform duration-300">
-          </div>
-          <div
-            class="aspect-[451/504] bg-white shadow-lg rounded-3xl bg-[url('images/10.png')] bg-cover bg-center hover:-translate-y-2 transition-transform duration-300">
-          </div>
-          <div
-            class="aspect-[451/504] bg-white shadow-lg rounded-3xl bg-[url('images/9.png')] bg-cover bg-center hover:-translate-y-2 transition-transform duration-300">
-          </div>
-        </div>
       </div>
-    </section>
 
-    <!-- Team Section -->
-    <section id="team" class="py-20 bg-slate-50">
-      <div class="container mx-auto px-4 fade-in-scroll">
-        <div class="text-center mb-16">
-          <h2 class="text-5xl md:text-[60px] font-bold text-slate-900 mb-6">TEAM</h2>
-          <p class="text-lg text-slate-600 max-w-4xl mx-auto">
-            A multidisciplinary team of engineers, designers, and agricultural specialists building practical AI for
-            real
-            farming challenges. We combine machine learning, product thinking, and domain expertise to deliver tools
-            farmers can truly rely on.
-          </p>
+      <div class="flex flex-col gap-8 max-w-6xl mx-auto">
+        <!-- Team Member 1 -->
+        <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+          <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
+              <img src="images/xoji.png" alt="Xojiakbar Tulqunov" class="w-full h-full object-cover">
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Xojiakbar Tulqunov</h3>
+              <div class="flex gap-4 text-2xl text-slate-600">
+                <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row gap-8 h-full relative z-10">
+              <div class="flex-1">
+                <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">CEO • Data Scientist • Agricultural
+                  Advisor</h4>
+                <p class="text-gray-700 font-medium mb-4">Combines AI expertise with field-level agricultural
+                  knowledge
+                  to design high-impact, farmer-centric solutions.</p>
+                <p class="text-gray-700 font-medium mb-8">Has won the 1st place in Tech for Ecology Hackathon
+                  organized
+                  by UNICEF and School21.</p>
+
+                <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Computer
+                    Vision</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">ML</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Geospatial</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">OpenCV</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">TensorFlow</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <img src="images/tensor.png" alt="TensorFlow" class="w-48 h-48 object-contain opacity-80">
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="flex flex-col gap-8 max-w-6xl mx-auto">
-          <!-- Team Member 1 -->
-          <div class="flex flex-col lg:flex-row gap-6 items-stretch">
-            <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
-              <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
-                <img src="images/xoji.png" alt="Xojiakbar Tulqunov" class="w-full h-full object-cover">
-              </div>
-              <div class="px-2 pb-2">
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">Xojiakbar Tulqunov</h3>
-                <div class="flex gap-4 text-2xl text-slate-600">
-                  <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
-                  <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-linkedin"></i></a>
-                  <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
-                </div>
-              </div>
+        <!-- Team Member 2 (Mirrored Layout on Desktop) -->
+        <div class="flex flex-col lg:flex-row-reverse gap-6 items-stretch">
+          <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
+              <img src="images/kamron.JPG" alt="Mirzayev Kamronbek" class="w-full h-full object-cover">
             </div>
-            <div
-              class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
-              <div class="flex flex-col lg:flex-row gap-8 h-full relative z-10">
-                <div class="flex-1">
-                  <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">CEO • Data Scientist • Agricultural
-                    Advisor</h4>
-                  <p class="text-gray-700 font-medium mb-4">Combines AI expertise with field-level agricultural
-                    knowledge
-                    to design high-impact, farmer-centric solutions.</p>
-                  <p class="text-gray-700 font-medium mb-8">Has won the 1st place in Tech for Ecology Hackathon
-                    organized
-                    by UNICEF and School21.</p>
-
-                  <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Computer
-                      Vision</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">ML</span>
-                    <span
-                      class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Geospatial</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">OpenCV</span>
-                    <span
-                      class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">TensorFlow</span>
-                  </div>
-                </div>
-                <div class="flex items-center justify-center">
-                  <img src="images/tensor.png" alt="TensorFlow" class="w-48 h-48 object-contain opacity-80">
-                </div>
+            <div class="px-2 pb-2">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Mirzayev Kamronbek</h3>
+              <div class="flex gap-4 text-2xl text-slate-600">
+                <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
               </div>
             </div>
           </div>
+          <div
+            class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row-reverse gap-8 h-full relative z-10">
+              <div class="flex-1">
+                <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Frontend & Mobile Developer, QA</h4>
+                <p class="text-gray-700 font-medium mb-8">Combines AI expertise with field-level agricultural
+                  knowledge
+                  to design high-impact, farmer-centric solutions.</p>
 
-          <!-- Team Member 2 (Mirrored Layout on Desktop) -->
-          <div class="flex flex-col lg:flex-row-reverse gap-6 items-stretch">
-            <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
-              <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
-                <img src="images/kamron.JPG" alt="Mirzayev Kamronbek" class="w-full h-full object-cover">
-              </div>
-              <div class="px-2 pb-2">
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">Mirzayev Kamronbek</h3>
-                <div class="flex gap-4 text-2xl text-slate-600">
-                  <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
-                  <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
+                <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">UI
+                    engineering</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">QA
+                    automation</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">TailwindCSS</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Mobile
+                    dev</span>
                 </div>
               </div>
-            </div>
-            <div
-              class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
-              <div class="flex flex-col lg:flex-row-reverse gap-8 h-full relative z-10">
-                <div class="flex-1">
-                  <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Frontend & Mobile Developer, QA</h4>
-                  <p class="text-gray-700 font-medium mb-8">Combines AI expertise with field-level agricultural
-                    knowledge
-                    to design high-impact, farmer-centric solutions.</p>
-
-                  <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">UI
-                      engineering</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">QA
-                      automation</span>
-                    <span
-                      class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">TailwindCSS</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Mobile
-                      dev</span>
-                  </div>
-                </div>
-                <div class="flex items-center justify-center">
-                  <img src="images/tail.png" alt="Tailwind" class="w-48 h-48 object-contain opacity-80">
-                </div>
+              <div class="flex items-center justify-center">
+                <img src="images/tail.png" alt="Tailwind" class="w-48 h-48 object-contain opacity-80">
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Team Member 3 -->
-          <div class="flex flex-col lg:flex-row gap-6 items-stretch">
-            <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
-              <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
-                <img src="images/javo.png" alt="Javohir Joraqulov" class="w-full h-full object-cover">
-              </div>
-              <div class="px-2 pb-2">
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">Javohir Joraqulov</h3>
-                <div class="flex gap-4 text-2xl text-slate-600">
-                  <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
-                  <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-figma"></i></a>
-                  <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
-                </div>
-              </div>
+        <!-- Team Member 3 -->
+        <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+          <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
+              <img src="images/javo.png" alt="Javohir Joraqulov" class="w-full h-full object-cover">
             </div>
-            <div
-              class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
-              <div class="flex flex-col lg:flex-row gap-8 h-full relative z-10">
-                <div class="flex-1">
-                  <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">UI UX Designer, Marketing & Growth, PM
-                  </h4>
-                  <p class="text-gray-700 font-medium mb-8">19-year-old passionate about UI/UX design and frontend
-                    development. An IT-in-Business student who brings structure, clarity, and initiative to every team
-                    project.</p>
-
-                  <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">UI/UX</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Branding</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Figma</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Notion</span>
-                  </div>
-                </div>
-                <div class="flex items-center justify-center">
-                  <img src="images/Figma-logo.png" alt="Figma" class="w-48 h-48 object-contain opacity-80">
-                </div>
+            <div class="px-2 pb-2">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Javohir Joraqulov</h3>
+              <div class="flex gap-4 text-2xl text-slate-600">
+                <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-figma"></i></a>
+                <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
               </div>
             </div>
           </div>
+          <div
+            class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row gap-8 h-full relative z-10">
+              <div class="flex-1">
+                <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">UI UX Designer, Marketing & Growth, PM
+                </h4>
+                <p class="text-gray-700 font-medium mb-8">19-year-old passionate about UI/UX design and frontend
+                  development. An IT-in-Business student who brings structure, clarity, and initiative to every team
+                  project.</p>
 
-          <!-- Team Member 4 (Mirrored) -->
-          <div class="flex flex-col lg:flex-row-reverse gap-6 items-stretch">
-            <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
-              <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
-                <img src="images/ibrohim.JPG" alt="Ibrohim Murodjonov" class="w-full h-full object-cover">
-              </div>
-              <div class="px-2 pb-2">
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">Ibrohim Murodjonov</h3>
-                <div class="flex gap-4 text-2xl text-slate-600">
-                  <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
-                  <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-python"></i></a>
-                  <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
+                <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">UI/UX</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Branding</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Figma</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Notion</span>
                 </div>
               </div>
-            </div>
-            <div
-              class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
-              <div class="flex flex-col lg:flex-row-reverse gap-8 h-full relative z-10">
-                <div class="flex-1">
-                  <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">CTO, Backend Developer</h4>
-                  <p class="text-gray-700 font-medium mb-8">19-year-old passionate about UI/UX design and frontend
-                    development. An IT-in-Business student who brings structure, clarity, and initiative to every team
-                    project.</p>
-
-                  <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Scalable
-                      APIs</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Cloud
-                      Architecture</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Security</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Docker</span>
-                    <span
-                      class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">PostgreSQL</span>
-                  </div>
-                </div>
-                <div class="flex items-center justify-center">
-                  <img src="images/python.png" alt="Python" class="w-48 h-48 object-contain opacity-80">
-                </div>
+              <div class="flex items-center justify-center">
+                <img src="images/Figma-logo.png" alt="Figma" class="w-48 h-48 object-contain opacity-80">
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Team Member 5 -->
-          <div class="flex flex-col lg:flex-row gap-6 items-stretch">
-            <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
-              <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
-                <img src="images/anvar.JPG" alt="Anvar Zubaydullayev" class="w-full h-full object-cover">
-              </div>
-              <div class="px-2 pb-2">
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">Anvar Zubaydullayev</h3>
-                <div class="flex gap-4 text-2xl text-slate-600">
-                  <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
-                  <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-linkedin"></i></a>
-                  <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
-                </div>
+        <!-- Team Member 4 (Mirrored) -->
+        <div class="flex flex-col lg:flex-row-reverse gap-6 items-stretch">
+          <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
+              <img src="images/ibrohim.JPG" alt="Ibrohim Murodjonov" class="w-full h-full object-cover">
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Ibrohim Murodjonov</h3>
+              <div class="flex gap-4 text-2xl text-slate-600">
+                <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-python"></i></a>
+                <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
               </div>
             </div>
-            <div
-              class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
-              <div class="flex flex-col lg:flex-row gap-8 h-full relative z-10">
-                <div class="flex-1">
-                  <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Database Engineer, Product Manager</h4>
-                  <p class="text-gray-700 font-medium mb-4">Combines AI expertise with field-level agricultural
-                    knowledge
-                    to design high-impact, farmer-centric solutions.</p>
-                  <p class="text-gray-700 font-medium mb-8">Has won the 1st place in Tech for Ecology Hackathon
-                    organized
-                    by UNICEF and School21.</p>
+          </div>
+          <div
+            class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row-reverse gap-8 h-full relative z-10">
+              <div class="flex-1">
+                <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">CTO, Backend Developer</h4>
+                <p class="text-gray-700 font-medium mb-8">19-year-old passionate about UI/UX design and frontend
+                  development. An IT-in-Business student who brings structure, clarity, and initiative to every team
+                  project.</p>
 
-                  <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Product
-                      strategy</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Data
-                      modeling</span>
-                    <span
-                      class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">PostgreSQL</span>
-                    <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Airflow</span>
-                  </div>
+                <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Scalable
+                    APIs</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Cloud
+                    Architecture</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Security</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Docker</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">PostgreSQL</span>
                 </div>
-                <div class="flex items-center justify-center">
-                  <img src="images/post.png" alt="Postgres" class="w-48 h-48 object-contain opacity-80">
+              </div>
+              <div class="flex items-center justify-center">
+                <img src="images/python.png" alt="Python" class="w-48 h-48 object-contain opacity-80">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 5 -->
+        <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+          <div class="bg-white rounded-[2.5rem] p-4 shadow-lg w-full lg:w-[400px] shrink-0">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 bg-gray-100">
+              <img src="images/anvar.JPG" alt="Anvar Zubaydullayev" class="w-full h-full object-cover">
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Anvar Zubaydullayev</h3>
+              <div class="flex gap-4 text-2xl text-slate-600">
+                <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-[#0077B5]"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-[#24A1DE]"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-[2.5rem] p-8 shadow-lg flex-1 flex flex-col justify-between relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row gap-8 h-full relative z-10">
+              <div class="flex-1">
+                <h4 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Database Engineer, Product Manager</h4>
+                <p class="text-gray-700 font-medium mb-4">Combines AI expertise with field-level agricultural
+                  knowledge
+                  to design high-impact, farmer-centric solutions.</p>
+                <p class="text-gray-700 font-medium mb-8">Has won the 1st place in Tech for Ecology Hackathon
+                  organized
+                  by UNICEF and School21.</p>
+
+                <h5 class="font-semibold mb-3">Skills & Stacks:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Product
+                    strategy</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Data
+                    modeling</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">PostgreSQL</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-green-600 text-sm font-medium">Airflow</span>
                 </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <img src="images/post.png" alt="Postgres" class="w-48 h-48 object-contain opacity-80">
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Roadmap Section -->
-    <section id="roadmap" class="py-20 bg-white">
-      <div class="container mx-auto px-4 fade-in-scroll">
-        <div class="text-center mb-20">
-          <h2 class="text-5xl md:text-[60px] font-bold text-slate-900">Roadmap</h2>
-          <p class="text-lg text-slate-600 mt-4">Our journey to revolutionizing agriculture.</p>
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="py-20 bg-white">
+    <div class="container mx-auto px-4 fade-in-scroll">
+      <div class="text-center mb-20">
+        <h2 class="text-5xl md:text-[60px] font-bold text-slate-900">Roadmap</h2>
+        <p class="text-lg text-slate-600 mt-4">Our journey to revolutionizing agriculture.</p>
+      </div>
+
+      <!-- Responsive Timeline -->
+      <div class="relative max-w-6xl mx-auto">
+        <!-- Connecting Line (Desktop: Horizontal, Mobile: Vertical) -->
+        <div
+          class="absolute left-8 top-0 bottom-0 w-1 bg-green-200 md:left-0 md:right-0 md:top-1/2 md:h-1 md:w-full md:bottom-auto -z-10">
         </div>
 
-        <!-- Responsive Timeline -->
-        <div class="relative max-w-6xl mx-auto">
-          <!-- Connecting Line (Desktop: Horizontal, Mobile: Vertical) -->
-          <div
-            class="absolute left-8 top-0 bottom-0 w-1 bg-green-200 md:left-0 md:right-0 md:top-1/2 md:h-1 md:w-full md:bottom-auto -z-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-4">
+          <!-- Step 1: Idea -->
+          <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
+            <!-- Circle -->
+            <div
+              class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
+              1</div>
+            <!-- Content -->
+            <div
+              class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-slate-900 mb-2">IDEA</h3>
+              <ul class="text-slate-600 text-sm space-y-1">
+                <li>Market research</li>
+                <li>Core features defined</li>
+                <li>Problem validation with farmers</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-4">
-            <!-- Step 1: Idea -->
-            <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
-              <!-- Circle -->
-              <div
-                class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
-                1</div>
-              <!-- Content -->
-              <div
-                class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
-                <h3 class="text-2xl font-bold text-slate-900 mb-2">IDEA</h3>
-                <ul class="text-slate-600 text-sm space-y-1">
-                  <li>Market research</li>
-                  <li>Core features defined</li>
-                  <li>Problem validation with farmers</li>
-                </ul>
-              </div>
+          <!-- Step 2: Prototype -->
+          <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
+            <!-- Circle -->
+            <div
+              class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
+              2</div>
+            <!-- Content -->
+            <div
+              class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-slate-900 mb-2">PROTOTYPE</h3>
+              <ul class="text-slate-600 text-sm space-y-1">
+                <li>Simple UI</li>
+                <li>Mock pest detection</li>
+                <li>Fake yield results</li>
+              </ul>
             </div>
+          </div>
 
-            <!-- Step 2: Prototype -->
-            <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
-              <!-- Circle -->
-              <div
-                class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
-                2</div>
-              <!-- Content -->
-              <div
-                class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
-                <h3 class="text-2xl font-bold text-slate-900 mb-2">PROTOTYPE</h3>
-                <ul class="text-slate-600 text-sm space-y-1">
-                  <li>Simple UI</li>
-                  <li>Mock pest detection</li>
-                  <li>Fake yield results</li>
-                </ul>
-              </div>
+          <!-- Step 3: MVP -->
+          <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
+            <!-- Circle -->
+            <div
+              class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
+              3</div>
+            <!-- Content -->
+            <div
+              class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-slate-900 mb-2">MVP</h3>
+              <ul class="text-slate-600 text-sm space-y-1">
+                <li>Real pest detection model</li>
+                <li>Task notifications</li>
+                <li>Soil analysis (manual input)</li>
+                <li>Beta with small farmers</li>
+              </ul>
             </div>
+          </div>
 
-            <!-- Step 3: MVP -->
-            <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
-              <!-- Circle -->
-              <div
-                class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
-                3</div>
-              <!-- Content -->
-              <div
-                class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
-                <h3 class="text-2xl font-bold text-slate-900 mb-2">MVP</h3>
-                <ul class="text-slate-600 text-sm space-y-1">
-                  <li>Real pest detection model</li>
-                  <li>Task notifications</li>
-                  <li>Soil analysis (manual input)</li>
-                  <li>Beta with small farmers</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Step 4: Launch -->
-            <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
-              <!-- Circle -->
-              <div
-                class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
-                4</div>
-              <!-- Content -->
-              <div
-                class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
-                <h3 class="text-2xl font-bold text-slate-900 mb-2">LAUNCH</h3>
-                <ul class="text-slate-600 text-sm space-y-1">
-                  <li>Premium features</li>
-                  <li>Scalable backend</li>
-                  <li>Subscription system</li>
-                  <li>Partnerships</li>
-                </ul>
-              </div>
+          <!-- Step 4: Launch -->
+          <div class="relative flex md:flex-col items-start md:items-center gap-6 md:gap-0 group">
+            <!-- Circle -->
+            <div
+              class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg ring-8 ring-white z-10 shrink-0 group-hover:scale-110 transition-transform duration-300">
+              4</div>
+            <!-- Content -->
+            <div
+              class="md:mt-8 md:text-center bg-white p-6 rounded-2xl shadow-md border border-slate-100 w-full md:w-auto hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-slate-900 mb-2">LAUNCH</h3>
+              <ul class="text-slate-600 text-sm space-y-1">
+                <li>Premium features</li>
+                <li>Scalable backend</li>
+                <li>Subscription system</li>
+                <li>Partnerships</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script>
-      // Simple Mobile Menu Toggle (Optional, can add if needed)
-      // Fade in animation
-      document.addEventListener('DOMContentLoaded', () => {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('opacity-100', 'translate-y-0');
-              entry.target.classList.remove('opacity-0', 'translate-y-10');
-            }
-          });
-        });
-
-        document.querySelectorAll('.fade-in-scroll').forEach((el) => {
-          el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
-          observer.observe(el);
+  <script>
+    // Simple Mobile Menu Toggle (Optional, can add if needed)
+    // Fade in animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+          }
         });
       });
-    </script>
+
+      document.querySelectorAll('.fade-in-scroll').forEach((el) => {
+        el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+        observer.observe(el);
+      });
+    });
+  </script>
   </div>
   <!-- Soil Footer -->
   <div class="relative  w-full mt-[-40px]">
